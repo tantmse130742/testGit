@@ -1,0 +1,115 @@
+$font-normal: 15px;
+@mixin form-text($color) {
+    background-color: $color;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-size: $font-normal;
+    font-weight: bold;
+    border: solid 1px rgb(255, 255, 255, 0.3);
+}
+
+body {
+    background-color: #e5e5e5;
+    padding: 0px;
+    margin: 0px;
+}
+* {
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+    .displayLogin {
+        flex-direction: column;
+        &-picture {
+            width: 100%;
+        }
+        &-loginForm {
+            width: 100%;
+        }
+    }
+}
+
+.displayLogin {
+    height: 900px;
+    display: flex;
+    &-picture {
+        width: 50%;
+    }
+    &-loginForm {
+        width: 50%;
+        position: relative;
+        .formmInput {
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h3 {
+                font-size: 16px;
+                padding-bottom: 5px;
+                margin-bottom: 0px;
+            }
+            h2 {
+                margin-top: 0px;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            form {
+                p {
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
+                input[type="text"] {
+                    width: 100%;
+                    padding: 0.7rem;
+                    border-radius: 5px;
+                    border: 0.5px solid rgb(128, 128, 128, 0.4);
+                }
+                input[type="password"] {
+                    width: 100%;
+                    padding: 0.7rem;
+                    border-radius: 5px;
+                    border: 0.5px solid rgb(128, 128, 128, 0.4);
+                }
+                .forgot-remember {
+                    margin-top: 10px;
+                    &-remenberme {
+                        float: left;
+                        input[type="checkbox"] {
+                            border-radius: 50%;
+                        }
+                    }
+                    &-forgot {
+                        float: right;
+                        a {
+                            text-decoration: none;
+                            color: rgb(138, 43, 226, 0.8);
+                            font-size: $font-normal;
+                        }
+                    }
+                }
+                input[type="submit"] {
+                    @include form-text(#04c35c);
+                }
+            }
+            &-google {
+                width: 100%;
+                text-align: center;
+                button {
+                    @include form-text(rgba(32, 30, 30, 0.418));
+                }
+            }
+        }
+
+        .dontHaveAccount {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

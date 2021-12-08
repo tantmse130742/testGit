@@ -1,0 +1,107 @@
+body {
+  background-color: #e5e5e5;
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+
+.displayLogin {
+  display: flex;
+  flex-direction: row;
+}
+.displayLogin-picture {
+  width: 50%;
+}
+.displayLogin-loginForm {
+  width: 50%;
+  position: relative;
+}
+.displayLogin-loginForm .formmInput {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.displayLogin-loginForm .formmInput h3 {
+  font-size: 16px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+.displayLogin-loginForm .formmInput h2 {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.displayLogin-loginForm .formmInput form p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.displayLogin-loginForm .formmInput form input[type=text] {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(128, 128, 128, 0.4);
+}
+.displayLogin-loginForm .formmInput form input[type=password] {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(128, 128, 128, 0.4);
+}
+.displayLogin-loginForm .formmInput form .forgot-remember {
+  margin-top: 10px;
+}
+.displayLogin-loginForm .formmInput form .forgot-remember-remenberme {
+  float: left;
+}
+.displayLogin-loginForm .formmInput form .forgot-remember-remenberme input[type=checkbox] {
+  border-radius: 50%;
+}
+.displayLogin-loginForm .formmInput form .forgot-remember-forgot {
+  float: right;
+}
+.displayLogin-loginForm .formmInput form .forgot-remember-forgot a {
+  text-decoration: none;
+  color: rgba(138, 43, 226, 0.8);
+  font-size: 15px;
+}
+.displayLogin-loginForm .formmInput form input[type=submit] {
+  background-color: #04c35c;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+}
+.displayLogin-loginForm .formmInput-google {
+  width: 100%;
+  text-align: center;
+}
+.displayLogin-loginForm .formmInput-google button {
+  background-color: rgba(32, 30, 30, 0.418);
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+}
+.displayLogin-loginForm .dontHaveAccount {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=logiin_page.css.map */
